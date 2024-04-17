@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ønskesky - Velkommen</title>
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+<header>
+    <h1>Velkommen til Ønskeøen</h1>
+</header>
+<section>
+    <h2>Hvad er Ønskeøen?</h2>
+    <p>Ønskeøen er din personlige ønskeside, hvor du kan oprette og organisere dine ønsker fra forskellige butikker og onlineforhandlere. Med Ønskesky kan du nemt holde styr på alt, hvad du ønsker dig.</p>
+    <p>Bliv medlem i dag og begynd at oprette din egen ønskeliste!</p>
+</section>
+<aside>
+    <div class="login-section">
+        <h2>Login</h2>
+        <form action="/users/login" method="POST">
+            <label for="username">Brugernavn:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Adgangskode:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Log ind</button>
+        </form>
+        <p>Har du ikke en konto? <a href="/users/signup">Opret en her</a>.</p>
+    </div>
+</aside>
+<footer>
+    <p>&copy; Ønskeøen</p>
+</footer>
+</body>
+</html>
